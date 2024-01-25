@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Điều khiển bật/tắt bóng đèn</title>
+  <style>
+    .lightbulb {
+      width: 100px;
+      height: 100px;
+      background-color: gray;
+      border-radius: 50%;
+    }
+    
+    .lightbulb.on {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <div class="lightbulb" id="bulb"></div>
+  <button onclick="toggleLightbulb()">Bật/Tắt</button>
+
+  <script>
+    function toggleLightbulb() {
+      var bulb = document.getElementById("bulb");
+      bulb.classList.toggle("on");
+    }
+  </script>
+</body>
+</html>
